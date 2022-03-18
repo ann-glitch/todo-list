@@ -27,7 +27,7 @@ const createTask = function (name) {
             <input type="text" class="editBox">
             <button class="edit">Edit</button>
             <button style="display:none;" class="saveChanges">Save</button>
-            <button class="delete">Delete</button>
+            <button class="delete">Del</button>
         `;
   return task;
 };
