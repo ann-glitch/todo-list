@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("./images/leaves.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.side-bar {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  width: 290px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+}
+
+.side-bar .menu {
+  width: 100%;
+}
+
+.side-bar .menu .item {
+  position: relative;
+  cursor: pointer;
+}
+
+.side-bar .menu .item li {
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  padding: 15px 30px;
+}
+
+.side-bar .menu .item li:hover {
+  background: lightblue;
+  transition: 0.3s ease;
+}
+.side-bar .menu .item button {
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  background: none;
+}
+
+.side-bar .menu .item i {
+  margin-right: 15px;
+}
+h1 {
+  color: #fff;
+  display: block;
+  padding: 30px 30px;
+}
+
+h3 {
+  font-size: 25px;
+  display: block;
+  padding: 20px 30px;
+}
+.project-btn {
+  padding: 5px 30px;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  background: none;
+}
+
+.project-btn:hover {
+  background: lightblue;
+  transition: 0.3s ease;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.child {
+  margin-top: 90px;
+}
+
+.child .task-btn {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  background: none;
+  border: none;
+}
+
+.child .add-btn {
+  font-size: 15px;
+  width: 40px;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+.child h4 {
+  color: #fff;
+  padding: 10px;
+  font-size: 30px;
+}
+
+#input-task {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  padding-left: 20px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+#input-date {
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  text-align: center;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.todo-container {
+  margin-top: 40px;
+  color: #fff;
+  font-size: 18px;
+}
+.todo-date {
+  margin-top: 40px;
+  color: #fff;
+}
+
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+li > input[type="checkbox"] {
+  position: relative;
+  top: 25px;
+}
+
+.editBox {
+  width: 200px;
+  height: 25px;
+  border-radius: 10px;
+  padding-left: 20px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+li > label {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  width: 237px;
+  padding: 0 0 0 18px;
+}
+
+li > input[type="text"] {
+  width: 226px;
+  outline: none;
+}
+
+li > .delete:hover {
+  color: #cf2323;
+}
+
+ul li input[type="text"] {
+  display: none;
+}
+
+ul li.editMode input[type="text"] {
+  display: block;
+}
+
+ul li.editMode label {
+  display: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 500px;
+  margin-left: 85rem;
+  color: #fff;
+  font-size: 12px;
+}
