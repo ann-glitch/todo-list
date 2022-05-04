@@ -199,4 +199,8 @@ footer {
 .side-bar {
     display: none;
   }
+  button {
+    color: black;
+  }
+ 
 }
