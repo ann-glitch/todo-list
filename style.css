@@ -193,3 +193,10 @@ footer {
   color: #fff;
   font-size: 13px;
 }
+
+@media screen and (max-width: 768px) {
+  /* For mobile phones: */
+.side-bar {
+    display: none;
+  }
+}
